@@ -28,7 +28,7 @@ ax.matshow(conf,cmap=plt.cm.Oranges,alpha=0.3)
 
 for i in range(conf.shape[0]):
     for j in range(conf.shape[1]):
-        ax.text(x-j,y=i,s=conf[i,j],va='center',size = 'xx-large')
+        ax.text(x=j,y=i,s=conf[i,j],va='center',size = 'xx-large')
 plt.plot(y_test,y_pred)
 plt.show()
 
